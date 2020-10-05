@@ -4,7 +4,6 @@ import { useAuth } from "./AuthProvider";
 
 const Login = (props) => {
   const { isLogin, signIn } = useAuth("auth");
-  console.log(props);
   return Boolean(isLogin) ? (
     <Redirect to={props.location.from} />
   ) : (

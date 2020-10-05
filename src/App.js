@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import AuthProvider from "./AuthProvider";
 import Hello from "./Hello";
 import Login from "./Login";
+import LogOut from "./LogOut";
 import PrivateRoute from "./PrivateRoute";
 import "./styles.css";
 import World from "./World";
@@ -11,6 +12,7 @@ import World from "./World";
 export default function App() {
   return (
     <AuthProvider>
+      <LogOut />
       <BrowserRouter>
         <Switch>
           <Route path="/login" component={Login} />

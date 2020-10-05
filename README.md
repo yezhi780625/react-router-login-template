@@ -1,2 +1,3 @@
 # react-router-login-template
-Created with CodeSandbox
+
+This is a login template within `react-router`.
